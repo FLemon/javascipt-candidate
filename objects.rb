@@ -7,5 +7,10 @@ me = {
   'hair color' => 'brown'
 }
 
+me['name'] = 'new name'
+me['age'] = 10
+me['hair color'] = 'black'
+p me
 
 # 2. Iterate over the object to print the property/key names.
+me.keys.each { |k| puts k }
