@@ -1,7 +1,7 @@
 # 1. What is the length of the contacts array?
 
 contacts = []
-
+p contacts.size
 
 # 2. Add the following people to the contacts array.
 
@@ -35,7 +35,12 @@ tom = {
   title: 'instructor'
 }
 
+contacts.concat([jake,matt,tony,andrew,tom])
+p contacts
+
 
 # 3. Whoops, after adding all of those people to the same contacts list, you
 # realized you need a list containing only the instructors. Create a new
 # variable named instructors and populate it using the contacts array.
+instructors = contacts.select {|i| i[:title] == 'instructor' }
+p instructors

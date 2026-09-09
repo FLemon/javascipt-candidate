@@ -24,3 +24,6 @@ crayola1990 = [
 #
 # Hint: Strings are immutable, but a variable's value can be reassigned. You
 # might consider using split and join.
+
+crayola1990.map! {|i| i.downcase.gsub(/ /,'-') }
+p crayola1990
